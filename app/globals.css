@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.px-section {
+    @apply 2xl:px-12 lg:px-8 px-4;
+}
+@theme {
+    --color-primary: #a35c6a;
+    --color-biege: #f2ddb0;
+    --color-text-primary: #0d3e4c;
+    --color-text-secondary: #556070;
+    --color-section-secondary: #f0f1f3;
+    --shadow-double: "inset 0px 4px 4px 0px #00000040, 0px 4px 4px 0px #00000040";
+    --shadow-experience-double: "0px 36px 105px 0px #2B384C1A ,0px 4px 4px 0px #00000040";
+    --shadow-card: "0px 4px 4px 0px #00000040";
+    --animate-rotate: rotate 5s linear 2;
+    --animate-shake: move 1.5s alternate infinite;
+    --animate-stretch: increaseWidth 1s ease-in-out;
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes move {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        100% {
+            transform: translate(-10px, -10px);
+        }
+    }
+    @keyframes increaseWidth {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}
